@@ -1,61 +1,58 @@
 # drupal-console-fa
-DrupalConsole Farsi Language / به زبان فارسی
+کنسول دروپال به زبان فارسی
 
-# نسخه به زبان فارسی
+## کاربرد
 
-## Usage
+پروژه کنسول دروپال به صورت پیشفرض برای هر وبسایت دروپال ۸ به زبان انگلیسی نصب شده است.
 
-Drupal Console project it's installed per each Drupal 8 website with English language by default.
-
-To installe Drupal Console package for Farsi language run the following instructions
+برای نصب بسته کنسول دروپال به زبان فارسی دستورات زیر را اجرا کنید
 
 ```
 $ composer require drupal/console-fa
 ```
 
-### Install Drupal Console
+### نصب کنسول دروپال
 
-To install the appropriate version of Drupal Console prohect for your drupal installation, run the following composer command
+برای نصب نسخه مناسب از پروژه کنسول دروپال، دستور composer زیر را اجرا کنید
 
 ```
 $ composer require drupal/console:~1.0 --prefer-dist --optimize-autoloader
 ```
 
-### Install Drupal Console launcher
+### نصب راه‌انداز کنسول دروپال
 
-In order to avoid conflicts between Drupal release and have a Drupal Console version between major and minor releases in Drupal, in order to faciliate to load the Drupal Console commands available to each
-Drupal 8 website, a Drupal Console launcher was created.
- 
-Following the instruction below you could install the global application for Drupal Console launcher. 
+راه‌انداز کنسول دروپال به منظور پیشگیری از اختلاف بین نسخه‌های ماژور و مینور در دروپال، همچنین بارگیری دستورات کنسول دروپال برای هر وبسایت دروپال ۸ ایجاد شده است.
+
+با پیروی از دستورات زیر می‌توانید یک نسخه سراسری از راه‌انداز کنسول دروپال برای وبسایت‌های خود داشته باشید.
 
 ```
 $ curl https://drupalconsole.com/installer -L -o drupal.phar
-# Or 
+# یا 
 $ php -r "readfile('https://drupalconsole.com/installer');" > drupal.phar
 
 $mv drupal.phar /usr/local/bin/drupal
 $ chmod +x /usr/local/bin/drupal
 ```
 
-### Contribute
+### مشارکت
 
-If you want to contribute to this translation, you need to follow this steps
+اگر قصد مشارکت در این ترجمه را دارید، باید گام‌های زیر را دنبال کنید
 
-- Fork this repository following this link [https://github.com/hechoendrupal/drupal-console-fa#fork-destination-box](https://github.com/hechoendrupal/drupal-console-fa#fork-destination-box)
-- Clone your repostory forked in your local machine.
-- Set up upstream
+- فورک کردن این مخزن با استفاده از پیوند [https://github.com/hechoendrupal/drupal-console-fa#fork-destination-box](https://github.com/hechoendrupal/drupal-console-fa#fork-destination-box)
+- شبیه‌سازی از مخزن فورک شده در رایانه شخصی خود
+- برپایی upstream
 
-In order to be updated with other contribution you must to setup a connected with main repository using the following git command
+به منظور بروزسانی با سایر مشارکت‌کنندگان باید مخزن خود را با استفاده از دستورات زیر برپا کنید
 
 ```
 $ git remote add upstream git@github.com:hechoendrupal/drupal-console-fa.git
 ```
 
-To fetch the latest contribution before to star you must to run the next commands
+برای دریافت آخرین مشارکت‌ها باید دستورات زیر را اجرا کنید
 
 ```
 $ git fetch upstream
 $ git merge upstream/master
 ```
 
-N.B: Push your changes to your forked repository in order to create PR per day to avoid any conflicts with other contributors.
+پ.ن: به منظور پیشگیری از هرگونه اختلاف با سایر مشارکت‌کنندگان، ابتدا مخزن فورک شده خود را برای درخواست PR در ابتدای هر روز push کنید.
